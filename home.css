@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    animation: changeColor 10s infinite;
+    font-family: Verdana,  sans-serif;
+}
+
+@keyframes changeColor {
+    0% {background: #ff0000;}
+    20% {background: #ff7f00;}
+    40% {background: #ffff00;}
+    60% {background: #00ff00;}
+    80% {background: #0000ff;}
+    95% {background: #4b0082;}
+    100% {background: #ff0000;}
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.join-screen {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.triangle-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 200px solid transparent;
+    border-right: 350px solid black;
+    transform: translateX(-41.5%) translateY(-30%)rotate(180deg);
+}
+
+.triangle-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 200px solid transparent;
+    border-right: 350px solid white;
+    transform: translateX(30%) translateY(-30%) rotate(360deg);
+    cursor: pointer;
+}
+
+.triangle-button h2  {
+    position: relative;
+    z-index: 1;
+    color: white;
+    transform: translateX(-130px) translateY(-65px) rotate(360deg);
+    cursor: pointer;
+    font-size: 25px;
+    white-space: nowrap;
+}
+.triangle-button h1  {
+    position: relative;
+    z-index: 1;
+    color: black;
+    transform: translateX(-50px) translateY(25px) rotate(360deg);
+    cursor: pointer;
+    font-size: 25px;
+    white-space: nowrap;
+}
