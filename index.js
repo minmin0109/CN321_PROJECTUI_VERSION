@@ -6,6 +6,7 @@
         return `${Math.trunc(Math.random() * 999)}-${Math.trunc(Math.random() * 999)}-${Math.trunc(Math.random() * 999)}`;
     }
 
+    
     document.querySelector("#sender-start-con-btn").addEventListener("click", function () {
         //จะเริ่มทำงานเมื่อกด click  โดยจะสร้างไอดีและส่งข้อมูลไปยังการเชื่อมต่อ
         let joinID = generateID(); 

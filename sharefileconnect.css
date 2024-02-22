@@ -87,8 +87,8 @@ body {
 .content-percent {
     font-size: 50px;
     color: black;
-    position: absolute; /* เพิ่มคุณสมบัตินี้ */
-    top: 0; /* ขยับข้อความไปที่ด้านบนสุดของกล่อง */
+    position: absolute; 
+    top: 0; 
     text-align: center;
     padding: 10px;
 }

@@ -5,7 +5,6 @@ body {
     animation: changeColor 10s infinite;
     font-family: Verdana,  sans-serif;
 }
-
 @keyframes changeColor {
     0% {background: #ff0000;}
     20% {background: #ff7f00;}
@@ -15,7 +14,6 @@ body {
     95% {background: #4b0082;}
     100% {background: #ff0000;}
 }
-
 .app {
     display: flex;
     justify-content: center;
