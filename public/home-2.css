@@ -24,7 +24,7 @@ body {
 .join-screen {
     position: relative;
     width: 100px;
-    height: 100px;
+    height:  100px;
 }
 
 .triangle-button::before {
@@ -69,4 +69,19 @@ body {
     cursor: pointer;
     font-size: 25px;
     white-space: nowrap;
+}
+
+#two-buttons {
+  /* width: 100px;
+  height: 100px; */
+  /* display: inline-block; */
+  border: 1px solid magenta;
+  cursor: pointer;
+
+  position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 200px solid transparent;
+    border-right: 350px solid black;
+    
 }

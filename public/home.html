@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flowify</title>
+  <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+
+
+<body>
+  <div class="app">
+    <div class="join-screen">
+      <div class="logo">
+        <img src="../img/logo.png" alt="">
+      </div>
+      <div class="button button-share"  onclick="goToShareFile()">
+        <h2> SHARE YOUR FILE</h2>
+      </div>
+      <div class="button button-receiver" onclick="goToReceiverFile() ">
+        <h2> RECEIVER FILE</h2>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  function goToShareFile() {
+      window.location.href = "shareyourfile.html";
+  }
+  function goToReceiverFile() {  
+      window.location.href = "receiverfile.html";
+  }
+  </script>
+  
+</html>

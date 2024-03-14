@@ -43,7 +43,7 @@ body {
 }
 .form-group {
     width: 200px; 
-    height: 40px; 
+    height: 30px; 
     font-size: 18px; 
     padding: 10px; 
     border-radius: 5px; 
@@ -51,6 +51,13 @@ body {
     justify-content: center;
     transform: translateX(145%) translateY(-10px);
     text-align: center;
+    border: 2px solid white; 
+    padding: 10px; 
+    margin-top: 15px;
+    background-color:white;
+}
+.form-group-text {
+    margin-top: -9px;
 }
 input:placeholder-shown {
     text-align: center;

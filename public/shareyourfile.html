@@ -13,7 +13,7 @@
             <div class="content">
                 <h1> Share Your Files</h1>
             </div>
-            <div class="button-signout">
+            <div class="button-signout" onclick="gotoHomepage()">
                 <i class="fa-solid fa-right-from-bracket fa-3x"></i>
             </div>
             <div class="content-gen">
@@ -22,15 +22,19 @@
             <div class="btn-paperplane">
                 <i class="fa-regular fa-paper-plane"></i>
             </div>
-            <div class="btn-create">
+            <div class="btn-create" id="sender-start-con-btn">
                 <button type="button" class="btn btn-light">Create Room</button>
             </div>
-            <div class="form-group">
-                <input type="text" class="form-control" id="inputText" placeholder="123-456-789 E">
+            <div class="form-group " >
+                <div class=" form-group-text" id="join-id" ></div>
+
             </div>
         </div>
-        
-        
-    
 </body>
+<script>
+    function gotoHomepage() {
+        window.location.href = "home.html";
+    }
+</script>
+<script type="text/javascript" src="code.js"></script>
 </html>

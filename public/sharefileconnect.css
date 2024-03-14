@@ -12,10 +12,10 @@ body {
 }
 .content{
     color:white;
-    transform: translateX(-250%) translateY(-315px);
+    transform: translateX(-180%) translateY(-315px);
 }
 .btn-share {
-    transform: translateX(-750%) translateY(-267px);
+    transform: translateX(-800%) translateY(-267px);
 }
 .btn-signout {
     color: white;
@@ -49,18 +49,22 @@ body {
     margin: 0 20px;
     cursor: pointer;
 }
-
-
+.content-box h4{
+    text-align: center;
+    transform: translate(0%, 190px); 
+    color: white;
+}
 .boxsentfile {
     width: 550px;
     height: 400px; 
     position: absolute;
     top: 50%; 
     left: 50%; 
-    transform: translate(-100%, -50%); 
+    transform: translate(-10%, -50%); 
     border: 2px white;
     margin: 0 20px;
     overflow-y: auto;
+    display: none;
 }
 .boxsentfile-num {
     width: 150px;
@@ -70,6 +74,7 @@ body {
     word-wrap: break-word; 
     overflow: hidden;
     padding-right: 7px;
+    display: none;
     
 }
 .content-box-num {
@@ -84,8 +89,8 @@ body {
 .content-percent {
     font-size: 50px;
     color: black;
-    position: absolute; /* เพิ่มคุณสมบัตินี้ */
-    top: 0; /* ขยับข้อความไปที่ด้านบนสุดของกล่อง */
+    position: absolute; 
+    top: 0; 
     text-align: center;
     padding: 10px;
 }

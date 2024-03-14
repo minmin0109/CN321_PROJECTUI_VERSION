@@ -1,0 +1,49 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ShareYourFileConnect</title>
+        <link rel="stylesheet" type="text/css" href="sharefileconnect.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d574147d7f.js" crossorigin="anonymous"></script>
+    </head>
+    <body style="background-color: #000000;">
+        <div class="content">
+            <h2> Share Your File</h2>
+        </div>
+        <button type="button" class="btn btn-light btn-rounded btn-share">SHARE</button>
+        <div class="button-signout btn-signout"  onclick="gotoHomepage()">
+            <i class="fa-solid fa-right-from-bracket fa-3x"></i>
+        </div>
+        <div class="container border-line">
+            <div class="box content-box">
+                <div class="file-list">
+                    <h4>click here to select file to sharing</h4>
+                    <input type="file" id="file-input" title="share file" style="display: none;">
+                </div>
+            </div>
+        </div>
+        <div class="boxsentfile">
+            <div class="boxsentfile-num bg-light">
+                <div class="content-box-num">
+                        <div class="content-percent">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        window.onload = function() {
+            document.querySelector('.content-box').addEventListener('click', function() {
+                document.getElementById('file-input').click();
+            });
+        };   
+    </script>
+    <script>
+        function gotoHomepage() {
+            window.location.href = "home.html";
+        }
+    </script>
+    <script type="text/javascript" src="fileinput.js" defer></script>
+    </html>
