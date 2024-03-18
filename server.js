@@ -6,10 +6,10 @@ const path = require("path");
 const app = express();
 const server = http.createServer(app);
 
-app.use(express.static(path.join(__dirname, "/public")));
 
 const wss = new WebSocket.Server({ server });
 
+app.use(express.static(path.join(__dirname, "public")));
 const clients = {};
 const receiverRooms = {};
 
@@ -118,5 +118,6 @@ function handleReceiverJoin(socket, data) {
 }
 
 server.listen(7460, function () {
-    console.log("Server is running on port 7460");
+    console.log("Server is running on port 7460 ");
+    console.log("click here http://localhost:7460/ ")
 });
